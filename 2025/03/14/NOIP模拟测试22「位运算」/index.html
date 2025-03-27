@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            NOIP模拟测试22「位运算」 | 
+        
+        Hexo
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.svg">
+    <link rel="icon" href="/img/favicon.svg">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Hexo">
+    <meta name="msapplication-starturl" content="http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9522%E3%80%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E3%80%8D/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Hexo">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.svg">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9522%E3%80%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E3%80%8D/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="NOIP模拟测试22「位运算」 | Hexo">
+    <meta property="og:image" content="/img/favicon.svg">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Fri Mar 14 2025 11:38:13 GMT+0800">
+        <meta property="article:modified_time" content="Fri Mar 14 2025 11:36:41 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9522%E3%80%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E3%80%8D/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9522%E3%80%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E3%80%8D/index.html",
+    "headline": "NOIP模拟测试22「位运算」",
+    "datePublished": "Fri Mar 14 2025 11:38:13 GMT+0800",
+    "dateModified": "Fri Mar 14 2025 11:36:41 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "rtrt",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Hexo",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.svg"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                NOIP模拟测试22「位运算」
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>rtrt</strong>
+        <span>3月 14, 2025</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=NOIP模拟测试22「位运算」&url=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9522%E3%80%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E3%80%8D/index.html&pic=http://example.com/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=NOIP模拟测试22「位运算」&url=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9522%E3%80%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E3%80%8D/index.html&via=rtrt" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9522%E3%80%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E3%80%8D/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9522%E3%80%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E3%80%8D/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>归档于  2019-08-16 07:09</p>
+<p><img src="https://img2018.cnblogs.com/blog/1708132/201908/1708132-20190816062502629-1128137933.png"></p>
+<p><img src="https://img2018.cnblogs.com/blog/1708132/201908/1708132-20190816062528814-560135835.png"></p>
+<p>范围n—–$100000$ m $30$</p>
+<p>输出方案</p>
+<p>这是一个很好的$dp$题</p>
+<p>首先我们应该看出来一条性质只要你最后有方案达到$n$个$1$，那么你可以达到任何&#96;一种$n$个$1$的情况</p>
+<p>例如</p>
+<p>你最后可以达到$3$个$1$</p>
+<p>那么你可以达到$11100 $ $ 01110$ $01011$ $01101$等方案</p>
+<p>证明：题目里说的操作和优美值都是一的个数相关，只要我们可以达到$n$个一，我们可以通过变换$1$的位置得到多种方案</p>
+<p>于是题目里给的$C$我们并不关心，我们只关心$1$的个数，我们把1都放到最右面,另外这也给我们下面dp提供方便</p>
+<p>我们先看各个运算意义</p>
+<p>假设你$x$和$y$中有$s$个重复的$1$求各个运算之后一的个数，</p>
+<p>$&amp;$后$1$的个数就是$s$，</p>
+<p>对于$|$我们如果都加的话重复的多加一次</p>
+<p>$|$后$1$的个数就是$x+y-s$</p>
+<p>重复变为0</p>
+<p>^后$1$的个数就是$x+y-s-s$</p>
+<p>然后我们可以尝试列一个$dp$</p>
+<p>设$f[x][j]$表示第$x$个操作有$j$个$1$的情况，我们当有这种情况就设为$1$，设最后$C$中一的个数为$x$,我们只需要看$f[n][x]$,若$f[n][x]$为$1$递归找解(后面会说到,其实递归找解是这个题最难的地方),若为$0$就是无解</p>
+<p>根据上面得出结论我们可以列出</p>
+<p>枚举这次操作后重复个数为w,设这次优美值为$G[i]$,枚举之前1的个数为$j$</p>
+<p>若这次操作为$&amp;$则$f[x][w]&#x3D;max(f[x-1][j],f[x][w])$</p>
+<p>若为$|$ 则$f[x][G[i]+j-w]&#x3D;max(f[x][G[i]+j-w],f[x-1][j])$</p>
+<p>类似的若为^则$f[x][G[i]+j-w<em>2]&#x3D;max(f[x][G[i]+j-w</em>2],f[x-1][j])$</p>
+<p>注意一下边界以及循环枚举</p>
+<pre><code>            for(ll w=max(0ll,G[i]+j-m);w&lt;=min(j,G[i]);w++)
+</code></pre>
+<p>看这句max,因为当它比m大时一定有重叠部分,且重叠部分至少为$G[i]+j-m$</p>
+<p>然后就到了这个题难点记录方案</p>
+<p>思考我们已知条件</p>
+<p>我们从后往前搜,我们目前知道的是最终值,我们每一次都把前一位的值算出来,再搜前一位</p>
+<p>那么我们已知运算符号已知运算前后1的个数,和运算后的值,我们现在要做的就是求出前一位值,且我们知道这一定能找到一组合法解</p>
+<p>三个运算符号分开考虑,</p>
+<p>假设符号为$|$,我们已知当前1个数(G[i]),和这次操作之后1的个数,这次操作之前1的个数</p>
+<p>我们只需要让这次操作之前数,这次操作数二进制下1完美覆盖掉这次操作1的个数即可</p>
+<p>因为我们符号$|$,我们只需要一个从前扫,一个从后扫,类似ST重复无所谓</p>
+<p>例如操作前$3$个$1$,这次操作$3个1$操作后$11011$,我们一个从前扫得到$11010$另一个得到$01011$</p>
+<p>假设符号为$&amp;$,&amp;只会让数值变小,我们可以断定操作前1的个数和这次操作1一定&gt;&#x3D;操作后</p>
+<p>我们先保证这些操作后上有值的位一定有$1$,然后我们分开放剩下的$1$</p>
+<p>例如操作前$4$个$1$,这次操作$3$个$1$,操作后$10001$,我们先得到$10001$<br>$10001$,再分开放1得到$11101$和$10011$</p>
+<p>假设我们当前符号^,思考^运行他会使相同的位置变成0,不同变为1</p>
+<p>那么我们重复的地方可以算出是(之前1的个数+这次1的个数-操作后1的个数)&#x2F;2</p>
+<p>然后先给不重复地方赋值,再分别给重复地方赋1</p>
+<p>例如操作前$4$个$1$,这次操作$2$个$1$,操作后$11101$,我们先得到重复长度1,然后得到$11100$和$00001$,最后给重复赋值$11110$,$00011$</p>
+<p><img src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif"><img src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif"></p>
+<pre><code>void dfs(ll pos,ll now)
+&#123;
+    if(pos==1)
+    &#123;
+        printf(&quot;%lld &quot;,now);
+        return ;
+    &#125;
+    ll cnt_1=0;
+//    printf(&quot;pos=%lld\n&quot;,pos);
+    for(ll i=1;i&lt;=m;i++)
+        if(now&amp;(1&lt;&lt;(i-1)))
+            cnt_1++;
+    if(ch[pos][1]==&#39;A&#39;)&#123;
+        ll nowk=now,tot=cnt_1,pr=pre[pos][cnt_1],nxtk=now;
+        //知道目前的数，知道目前cnt，知道之前cnt，求之前数
+        //因为是&amp;所以在满足k条件下尽量差开，分开放最优
+        //例如10001
+        //先放11001再放10111
+        for(ll i=1;i&lt;=m;i++)&#123;
+            if(tot==G[pos]) break;
+            if(!(now&amp;(1&lt;&lt;(i-1))))
+                nowk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+        tot=cnt_1;
+        for(ll i=1;i&lt;=m;i++)&#123;
+            if(tot==pr) break;
+            if(!(nowk&amp;(1&lt;&lt;(i-1))))
+                nxtk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+//        printf(&quot;nxtk=%lld nowk=%lld\n&quot;,nxtk,nowk);
+        dfs(pos-1,nxtk);
+        printf(&quot;%lld &quot;,nowk);
+    &#125;
+    if(ch[pos][1]==&#39;O&#39;)
+    &#123;
+        ll nowk=0,tot=0,pr=pre[pos][cnt_1],nxtk=0;
+        //知道目前的数，知道目前cnt，知道之前cnt，求之前数
+        //那么向kmp一样或无所谓
+        for(ll i=1;i&lt;=m;i++)
+        &#123;
+            if(tot==G[pos])break;
+            if(now&amp;(1&lt;&lt;(i-1)))
+                nowk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+        tot=0;
+        for(ll i=m;i&gt;=1;i--)
+        &#123;
+            if(tot==pr)break;
+            if(now&amp;(1&lt;&lt;(i-1)))
+            
+                nxtk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+//        printf(&quot;nx=%lld no=%lld\n&quot;,nxtk,nowk);
+        dfs(pos-1,nxtk);
+        printf(&quot;%lld &quot;,nowk);
+    &#125;
+    if(ch[pos][1]==&#39;X&#39;)&#123;
+        ll nowk=0,tot=0,pr=pre[pos][cnt_1],nxtk=0,lst=0;
+        ll chong=(pr+G[pos]-cnt_1)/2;
+        //计算出重合部分，重合部分就是第一个长度+第二个长度-总1数/2
+        for(ll i=1;i&lt;=m;i++)
+        &#123;
+            if(tot==G[pos]-chong)break;
+            if(now&amp;(1&lt;&lt;(i-1)))nowk|=(1&lt;&lt;(i-1)),tot++,lst=i;
+        &#125;
+        tot=0;
+        for(ll i=m;i&gt;=lst+1;i--)
+        &#123;
+            if(tot==pr-chong)break;
+            if(now&amp;(1&lt;&lt;(i-1)))nxtk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+        tot=0;
+        for(ll i=1;i&lt;=m;i++)
+        &#123;
+            if(tot==chong)break;
+            if(!(now&amp;(1&lt;&lt;(i-1))))nowk|=(1&lt;&lt;(i-1)),nxtk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+//        printf(&quot;nxk=%lld nok=%lld\n&quot;,nxtk,nowk);
+        dfs(pos-1,nxtk);
+        printf(&quot;%lld &quot;,nowk);
+    &#125;
+&#125;
+</code></pre>
+<p>求方案代码</p>
+<p>总代码</p>
+<p><img src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif"><img src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif"></p>
+<pre><code>#include&lt;bits/stdc++.h&gt;
+using namespace std;
+#define ll long long
+#define A 1010101
+ll f[A][32],pre[A][32],G[A],dl[A];
+ll x,n,m,c;
+char ch[A][6];
+bitset&lt;36&gt; b;
+void dfs(ll pos,ll now)
+&#123;
+    if(pos==1)
+    &#123;
+        printf(&quot;%lld &quot;,now);
+        return ;
+    &#125;
+    ll cnt_1=0;
+//    printf(&quot;pos=%lld\n&quot;,pos);
+    for(ll i=1;i&lt;=m;i++)
+        if(now&amp;(1&lt;&lt;(i-1)))
+            cnt_1++;
+    if(ch[pos][1]==&#39;A&#39;)&#123;
+        ll nowk=now,tot=cnt_1,pr=pre[pos][cnt_1],nxtk=now;
+        //知道目前的数，知道目前cnt，知道之前cnt，求之前数
+        //因为是&amp;所以在满足k条件下尽量差开，分开放最优
+        //例如10001
+        //先放11001再放10111
+        for(ll i=1;i&lt;=m;i++)&#123;
+            if(tot==G[pos]) break;
+            if(!(now&amp;(1&lt;&lt;(i-1))))
+                nowk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+        tot=cnt_1;
+        for(ll i=1;i&lt;=m;i++)&#123;
+            if(tot==pr) break;
+            if(!(nowk&amp;(1&lt;&lt;(i-1))))
+                nxtk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+//        printf(&quot;nxtk=%lld nowk=%lld\n&quot;,nxtk,nowk);
+        dfs(pos-1,nxtk);
+        printf(&quot;%lld &quot;,nowk);
+    &#125;
+    if(ch[pos][1]==&#39;O&#39;)
+    &#123;
+        ll nowk=0,tot=0,pr=pre[pos][cnt_1],nxtk=0;
+        //知道目前的数，知道目前cnt，知道之前cnt，求之前数
+        //那么向kmp一样或无所谓
+        for(ll i=1;i&lt;=m;i++)
+        &#123;
+            if(tot==G[pos])break;
+            if(now&amp;(1&lt;&lt;(i-1)))
+                nowk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+        tot=0;
+        for(ll i=m;i&gt;=1;i--)
+        &#123;
+            if(tot==pr)break;
+            if(now&amp;(1&lt;&lt;(i-1)))
+            
+                nxtk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+//        printf(&quot;nx=%lld no=%lld\n&quot;,nxtk,nowk);
+        dfs(pos-1,nxtk);
+        printf(&quot;%lld &quot;,nowk);
+    &#125;
+    if(ch[pos][1]==&#39;X&#39;)&#123;
+        ll nowk=0,tot=0,pr=pre[pos][cnt_1],nxtk=0,lst=0;
+        ll chong=(pr+G[pos]-cnt_1)/2;
+        //计算出重合部分，重合部分就是第一个长度+第二个长度-总1数/2
+        for(ll i=1;i&lt;=m;i++)
+        &#123;
+            if(tot==G[pos]-chong)break;
+            if(now&amp;(1&lt;&lt;(i-1)))nowk|=(1&lt;&lt;(i-1)),tot++,lst=i;
+        &#125;
+        tot=0;
+        for(ll i=m;i&gt;=lst+1;i--)
+        &#123;
+            if(tot==pr-chong)break;
+            if(now&amp;(1&lt;&lt;(i-1)))nxtk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+        tot=0;
+        for(ll i=1;i&lt;=m;i++)
+        &#123;
+            if(tot==chong)break;
+            if(!(now&amp;(1&lt;&lt;(i-1))))nowk|=(1&lt;&lt;(i-1)),nxtk|=(1&lt;&lt;(i-1)),tot++;
+        &#125;
+//        printf(&quot;nxk=%lld nok=%lld\n&quot;,nxtk,nowk);
+        dfs(pos-1,nxtk);
+        printf(&quot;%lld &quot;,nowk);
+    &#125;
+&#125;
+int main()&#123;
+    scanf(&quot;%lld%lld%lld&quot;,&amp;n,&amp;m,&amp;c);
+    for(ll i=2;i&lt;=n;i++)&#123;
+        scanf(&quot;%s&quot;,ch[i]+1);
+    &#125;
+    b|=c;
+    x=b.count();
+//    printf(&quot;x=%lld\n&quot;,x);
+    for(ll i=1;i&lt;=n;i++)&#123;
+        scanf(&quot;%lld&quot;,&amp;G[i]);
+    &#125;
+    f[1][G[1]]=1;
+    for(ll i=2;i&lt;=n;i++)
+        for(ll j=0;j&lt;=m;j++)&#123;
+            if(!f[i-1][j]) continue;
+            for(ll w=max(0ll,G[i]+j-m);w&lt;=min(j,G[i]);w++)&#123;
+                if(ch[i][1]==&#39;A&#39;)&#123;
+                    if(f[i-1][j]==1)
+                        f[i][w]=1,pre[i][w]=j/*,printf(&quot;A pos=%lld pre[%lld][%lld]=%lld\n&quot;,i,i,w,pre[i][w])*/;
+                &#125;
+                if(ch[i][1]==&#39;O&#39;)&#123;
+                    if(f[i-1][j]==1)
+                        f[i][j+G[i]-w]=1,pre[i][j+G[i]-w]=j/*,printf(&quot;O pos=%lld pre[%lld][%lld]=%lld\n&quot;,i,i,j+G[i]-w,pre[i][j+G[i]-w])*/;
+                &#125;
+                if(ch[i][1]==&#39;X&#39;)&#123;
+                    if(f[i-1][j]==1)
+                        f[i][j+G[i]-2*w]=1,pre[i][j+G[i]-2*w]=j/*,printf(&quot;X pos=%lld pre[%lld][%lld]=%lld\n&quot;,i,i,j+G[i]-2*w,pre[i][j+G[i]-2*w])*/;
+                &#125;
+            &#125;
+        &#125;
+    dfs(n,c);
+&#125;
+</code></pre>
+<p>View Code</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9522%E3%80%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E3%80%8D/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9522%E3%80%8C%E4%BD%8D%E8%BF%90%E7%AE%97%E3%80%8D/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9523%E3%80%8Cmine%C2%B7water%C2%B7gcd%E3%80%8D/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9521%E3%80%8C%E6%8A%98%E7%BA%B8&#183;%E4%B8%8D%E7%AD%89%E5%BC%8F%E3%80%8D/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="rtrt's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2025/03/">三月 2025<span class="sidebar_archives-count">135</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Hexo
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            NOIP模拟测试16「Drink·blue·weed」 | 
+        
+        Hexo
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.svg">
+    <link rel="icon" href="/img/favicon.svg">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Hexo">
+    <meta name="msapplication-starturl" content="http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9516%E3%80%8CDrink%C2%B7blue%C2%B7weed%E3%80%8D/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Hexo">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.svg">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9516%E3%80%8CDrink%C2%B7blue%C2%B7weed%E3%80%8D/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="NOIP模拟测试16「Drink·blue·weed」 | Hexo">
+    <meta property="og:image" content="/img/favicon.svg">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Fri Mar 14 2025 11:38:13 GMT+0800">
+        <meta property="article:modified_time" content="Fri Mar 14 2025 11:36:39 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9516%E3%80%8CDrink%C2%B7blue%C2%B7weed%E3%80%8D/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9516%E3%80%8CDrink%C2%B7blue%C2%B7weed%E3%80%8D/index.html",
+    "headline": "NOIP模拟测试16「Drink·blue·weed」",
+    "datePublished": "Fri Mar 14 2025 11:38:13 GMT+0800",
+    "dateModified": "Fri Mar 14 2025 11:36:39 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "rtrt",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Hexo",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.svg"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%AF%9D%E8%AF%B4%E8%BF%99%E6%AC%A1%E8%80%83%E8%AF%95"><span class="post-toc-number">1.</span> <span class="post-toc-text">话说这次考试</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Drink"><span class="post-toc-number">2.</span> <span class="post-toc-text">Drink</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-char%E8%A6%81%E6%AF%94int%E5%BF%AB"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1.char要比int快</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-read"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2.read</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-%E5%BE%AA%E7%8E%AF%E5%B1%95%E5%BC%80"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">3.循环展开</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-inline"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">4.inline</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-register"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">5.register</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6-STL"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">6.STL</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7-mod"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">7.mod</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8-2%E5%8F%981-%E5%8F%98"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">8.*2变&lt;&lt;1 &#x2F;2 变&gt;&gt;1 &#x3D;&#x3D;变 ! ^</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%8A%E9%9D%A2%E7%9A%84%E5%8D%A1%E5%B8%B8%E5%BA%94%E7%94%A8%E5%88%B0%E8%BF%99%E4%B8%AA%E9%A2%98%E5%91%A2"><span class="post-toc-number">3.</span> <span class="post-toc-text">上面的卡常应用到这个题呢</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#char-%E5%BE%AA%E7%8E%AF%E5%B1%95%E5%BC%80"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">char+循环展开</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#blue"><span class="post-toc-number">4.</span> <span class="post-toc-text">blue</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link"><span class="post-toc-number"></span> <span class="post-toc-text"></span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="post-toc-number">0.1.</span> <span class="post-toc-text">代码</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#weed"><span class="post-toc-number">1.</span> <span class="post-toc-text">weed</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                NOIP模拟测试16「Drink·blue·weed」
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>rtrt</strong>
+        <span>3月 14, 2025</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=NOIP模拟测试16「Drink·blue·weed」&url=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9516%E3%80%8CDrink%C2%B7blue%C2%B7weed%E3%80%8D/index.html&pic=http://example.com/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=NOIP模拟测试16「Drink·blue·weed」&url=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9516%E3%80%8CDrink%C2%B7blue%C2%B7weed%E3%80%8D/index.html&via=rtrt" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9516%E3%80%8CDrink%C2%B7blue%C2%B7weed%E3%80%8D/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9516%E3%80%8CDrink%C2%B7blue%C2%B7weed%E3%80%8D/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>归档于  2019-08-10 18:36</p>
+<p><img src="https://img2018.cnblogs.com/blog/1708132/201908/1708132-20190810174923471-9984262.png"></p>
+<h2 id="话说这次考试"><a href="#话说这次考试" class="headerlink" title="话说这次考试"></a>话说这次考试</h2><p><img src="https://img2018.cnblogs.com/blog/1708132/201908/1708132-20190810191115336-1547365302.png"></p>
+<h2 id="Drink"><a href="#Drink" class="headerlink" title="Drink"></a>Drink</h2><p>非常棒的一道卡常练习题，适合练习卡常</p>
+<p>真的很棒</p>
+<p>前置卡常知识</p>
+<h3 id="1-char要比int快"><a href="#1-char要比int快" class="headerlink" title="1.char要比int快"></a>1.char要比int快</h3><p>char是最快的</p>
+<p>输出putchar，输入getchar</p>
+<p>在这个题快了7000豪</p>
+<h3 id="2-read"><a href="#2-read" class="headerlink" title="2.read"></a>2.read</h3><p>快读非常棒，让你变得更快，fread更棒，fread会爆炸，考试时不要用fread</p>
+<h3 id="3-循环展开"><a href="#3-循环展开" class="headerlink" title="3.循环展开"></a>3.循环展开</h3><p>循环展开非常棒，虽然看上去没什么用，然而循环展开会让你的程序快很多，循环展开往往是使你从T90到A的关键</p>
+<h3 id="4-inline"><a href="#4-inline" class="headerlink" title="4.inline"></a>4.inline</h3><p>inline没什么用</p>
+<p>大多数时候都没有什么用，一般时间不会发生什么变化，然而在mex这个题inline突然变得有用</p>
+<p><img src="https://img2018.cnblogs.com/blog/1708132/201908/1708132-20190810175712000-2010854007.png"></p>
+<p>突然变快.jpeg</p>
+<h3 id="5-register"><a href="#5-register" class="headerlink" title="5.register"></a>5.register</h3><p>大多数时候都没有什么用，然而有时会突然变快，有时还会变慢</p>
+<p>暂时没有例子，（或者说只有变慢的例子）</p>
+<h3 id="6-STL"><a href="#6-STL" class="headerlink" title="6.STL"></a>6.STL</h3><p>priority_queue手打，</p>
+<p>stack手打</p>
+<p>map手打（不是让你打红黑树，是hash表）</p>
+<p>stack真的慢，stack打起来也好打，手打</p>
+<h3 id="7-mod"><a href="#7-mod" class="headerlink" title="7.mod"></a>7.mod</h3><p>define或者const</p>
+<p>定义成变量会很慢，</p>
+<h3 id="8-2变1-变"><a href="#8-2变1-变" class="headerlink" title="8.*2变&lt;&lt;1 &#x2F;2 变&gt;&gt;1 &#x3D;&#x3D;变 ! ^"></a>8.*2变&lt;&lt;1 &#x2F;2 变&gt;&gt;1 &#x3D;&#x3D;变 ! ^</h3><h2 id="上面的卡常应用到这个题呢"><a href="#上面的卡常应用到这个题呢" class="headerlink" title="上面的卡常应用到这个题呢"></a>上面的卡常应用到这个题呢</h2><h3 id="char-循环展开"><a href="#char-循环展开" class="headerlink" title="char+循环展开"></a>char+循环展开</h3><p>代码</p>
+<pre><code>#include&lt;bits/stdc++.h&gt;
+using namespace std;
+#define ll int
+#define A 2100
+char a[A][A];
+ll n,m,k;
+const int L=1&lt;&lt;20|1;
+char buffer[L],*S,*T;
+#define getchar() ((S==T&amp;&amp;(T=(S=buffer)+fread(buffer,1,L,stdin),S==T))?EOF:*S++)
+const int maxn=100000+5;
+inline int read()&#123;
+    register int ret;
+    register char r;
+    while(r=getchar(),r&lt;&#39;0&#39;||r&gt;&#39;9&#39;);ret=r-48;
+    while(r=getchar(),r&gt;=&#39;0&#39;&amp;&amp;r&lt;=&#39;9&#39;)ret=ret*10+r-48;
+    return ret;
+&#125;
+int main()&#123;
+    n=read(),m=read(),k=read();
+    for(ll i=1;i&lt;=n;i++)
+        for(ll j=1;j&lt;=m;j++)&#123;
+            register int ret;
+            char r=getchar();
+            while(!isdigit(r)) r=getchar();
+            a[i][j]=r;
+        &#125;
+    for(ll j=1,x,y,c,xl,yl;j&lt;=k;j++)&#123;
+        x=read(),y=read(),c=read();
+        xl=x+c-1,yl=y+c-1;
+        while(c&gt;1)&#123;    
+            for(ll i=0;i&lt;=c-2;i++)&#123;
+                ll a1=a[xl-i][y],a2=a[x][y+i],a3=a[x+i][y+c-1],a4=a[x+c-1][yl-i];
+                a[x][y+i]=a1,a[x+i][yl]=a2,a[xl][yl-i]=a3,a[xl-i][y]=a4;
+            &#125;
+            x++,y++,yl--,xl--,c-=2;
+        &#125;
+    &#125;
+    for(ll i=1;i&lt;=n;i++,puts(&quot;&quot;))
+        for(ll j=1;j&lt;=m;j++)&#123;
+            putchar(a[i][j]);putchar(&#39; &#39;);
+        &#125;
+&#125;
+</code></pre>
+<h2 id="blue"><a href="#blue" class="headerlink" title="blue"></a>blue</h2><h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>这个题它不卡set它卡splay！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！</p>
+<p>贪心，都说这个题很水，但我还是觉得不明白，看题解也是似懂非懂的</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre><code>#include&lt;bits/stdc++.h&gt;
+using namespace std;
+#define A 5010101
+#define Inf 10000000ll
+#define ll long long
+#define py printf(&quot;*****\n&quot;)
+#define mem(a) memset(a,0,sizeof(a))
+ll landu[A],head[A],nx[A],ver[A],edg[A],dep[A],a[A],bl[A],blx[A],ch[A][2],cnt[A],size[A],key[A],fa[A];
+ll n,m,tot=1,S,T,t,D,L,sz,rt;
+set&lt;ll&gt; s;
+inline ll read()&#123;
+    ll f=1,x=0;char c=getchar();
+    while(!isdigit(c)) &#123;
+        if(c==&#39;-&#39;) f=-1;
+        c=getchar();
+    &#125;
+    while(isdigit(c))&#123;
+        x=(x&lt;&lt;1)+(x&lt;&lt;3)+c-&#39;0&#39;;
+        c=getchar();
+    &#125;
+    return f*x;
+&#125;
+inline void clear(ll x)
+&#123;
+    ch[x][0]=ch[x][1]=key[x]=cnt[x]=fa[x]=size[x]=0;
+&#125;
+inline bool get(ll x)
+&#123;
+    return ch[fa[x]][1]==x;
+&#125;
+inline void pushup(ll x)
+&#123;
+    if(x)
+    &#123;
+        size[x]=cnt[x];
+        if(ch[x][1]) size[x]+=size[ch[x][1]];
+        if(ch[x][0]) size[x]+=size[ch[x][0]];
+    &#125;
+&#125;
+inline void rotate(ll x)
+&#123;
+    ll old=fa[x],oldfa=fa[old],which=get(x);
+    ch[old][which]=ch[x][which^1]; fa[ch[old][which]]=old;
+    ch[x][which^1]=old; fa[old]=x;
+    fa[x]=oldfa;
+    if(oldfa) ch[oldfa][ch[oldfa][1]==old]=x;
+    pushup(old);pushup(x); return ;
+&#125;
+inline void splay(ll x)
+&#123;
+    for(ll f;f=fa[x];rotate(x))
+        if(fa[f])
+            rotate(get(f)==get(x)?f:x);
+    rt=x;
+&#125; 
+inline ll pre()
+&#123;
+    if(cnt[rt]&gt;1) 
+        return rt;
+    ll now=ch[rt][0];
+    while(ch[now][1]) now=ch[now][1];
+    return now;
+&#125;
+inline ll nxt()
+&#123;    
+    if(cnt[rt]&gt;1)
+        return rt;
+    ll now=ch[rt][1];
+        while(ch[now][0]) now=ch[now][0];
+    return now;
+&#125;
+inline void insert(ll x)
+&#123;
+    if(rt==0)
+    &#123;
+        sz++;rt=sz;
+        cnt[sz]=size[sz]=1;
+        key[sz]=x;
+        fa[sz]=ch[sz][0]=ch[sz][1]=0;
+        return ;
+    &#125;
+    ll f=0,now=rt;
+    while(233)
+    &#123;    
+        if(key[now]==x)
+        &#123;
+            cnt[now]++;
+            pushup(now);
+            pushup(f);
+            splay(now);
+            return ;
+        &#125;
+        f=now,now=ch[now][key[now]&lt;x];
+        if(now==0)
+        &#123;
+            sz++;
+            cnt[sz]=size[sz]=1;
+            key[sz]=x;fa[sz]=f;
+            ch[sz][1]=ch[sz][0]=0;
+            ch[f][key[f]&lt;x]=sz;
+            pushup(f);splay(sz);return ;
+        &#125;
+    &#125;
+&#125;
+inline ll rnk(ll x)
+&#123;
+    ll ans=1,now=rt;
+    while(1)
+    &#123;
+        if(x&lt;key[now])
+            now=ch[now][0];
+        else
+        &#123;
+            ans+=size[ch[now][0]];
+            if(x==key[now])
+            &#123;
+                splay(now);return ans;
+            &#125;
+            ans+=cnt[now];
+            now=ch[now][1];
+        &#125;
+    &#125;
+&#125;
+inline void del(ll x)
+&#123;
+    rnk(x);
+    if(cnt[rt]&gt;1)
+    &#123;cnt[rt]--;pushup(rt);return ;&#125; 
+    if(!ch[rt][0]&amp;&amp;!ch[rt][1])
+    &#123;clear(rt);rt=0;return ;&#125;
+    if(!ch[rt][0]||!ch[rt][1])
+    &#123;
+        ll old=rt;
+        rt=ch[rt][1]|ch[rt][0];
+        clear(old);
+        fa[rt]=0;
+        return ;
+    &#125;
+    ll older=rt; ll leftbigest=pre();
+    splay(leftbigest);
+    ch[rt][1]=ch[older][1];
+    fa[ch[older][1]]=rt;
+    clear(older);
+    pushup(rt);
+&#125;
+void re()&#123;
+    memset(ch,0,sizeof(ch));
+    memset(size,0,sizeof(size));
+    memset(key,0,sizeof(key));
+    memset(fa,0,sizeof(fa));
+&#125;
+int main()
+&#123;
+set&lt;ll&gt;::iterator it;
+    scanf(&quot;%lld&quot;,&amp;t);
+    while(t--)&#123;
+        n=read(),m=read(),D=read(),L=read();
+        s.clear();
+        s.insert(-0x7ffffff);
+        for(ll i=1;i&lt;=n;i++)&#123;
+            a[i]=read();
+//            insert(a[i]);
+            s.insert(a[i]);
+        &#125;
+        ll ok=1,cnt=0;
+        while(ok)&#123;
+            ll now=0;
+            while(now&lt;L)&#123;
+                if(now+D&gt;=L) break;
+//                insert(now+D);
+//                ll x=pre();
+//                del(now+D);
+                ll x=*--s.upper_bound(now+D);
+//                printf(&quot;x=%lld  cnt=%lld\n&quot;,x,cnt);
+                if(x&lt;now)&#123;
+                    ok=0;
+                    break;
+                &#125;
+//                now=key[x];
+                now=x;
+                s.erase(x);
+//                del(key[x]);
+            &#125;
+            if(ok==0) break;
+            cnt++;
+            if(cnt==m) break;
+        &#125;
+        if(cnt!=m)
+            printf(&quot;%lld\n&quot;,cnt);
+        else
+            printf(&quot;Excited\n&quot;);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="weed"><a href="#weed" class="headerlink" title="weed"></a>weed</h2><p>比较神的一道题，学长讲的时候我没弄明白，这次考试30分就是报应</p>
+<p>以每个信息为下标记录三个信息，减少之后的层数，减少之后总的权值和，对之前区间减少的量</p>
+<p>首先在建树和修改时我们将叶子节点维护好，上传时利用这三个信息进行计算就行了</p>
+<p>优先删去右儿子节点（出现时间靠后），在右儿子不够时删除左儿子</p>
+<p>假设我们现在已经算完左右儿子</p>
+<p>那么如果右边儿子减少少于增加</p>
+<p>直接无脑加即可</p>
+<pre><code>    if(tr[rs].cut==0)&#123;
+        tr[x].v=tr[ls].v+tr[rs].v;
+        tr[x].c=tr[ls].c+tr[rs].c;
+        tr[x].cut=tr[ls].cut+tr[rs].cut;
+        return ;
+    &#125;
+</code></pre>
+<p>如果右面儿子减少大于增加，并且右面儿子减少&gt;&#x3D;左面儿子层数和</p>
+<p>那么当前cut会有剩余，那么v直接赋c直接赋成右面儿子剩余v，c的值，</p>
+<pre><code>    if(tr[ls].c&lt;=tr[rs].cut)&#123;
+        tr[x].cut=tr[rs].cut-tr[ls].c+tr[ls].cut;
+        tr[x].v=tr[rs].v;
+        tr[x].c=tr[rs].c;
+        return ;
+    &#125;
+</code></pre>
+<p>如果右面儿子减少小于左面增加，这是一种比较麻烦的情况，我们维护一个cal函数，专门计算左面儿子v的值</p>
+<pre><code>    if(tr[ls].c&gt;tr[rs].cut)&#123;
+        tr[x].cut=tr[ls].cut;
+        tr[x].v=tr[rs].v+ask(ls,tr[rs].cut);
+        tr[x].c=tr[rs].c+tr[ls].c-tr[rs].cut;
+        return ;
+    &#125;
+</code></pre>
+<p>cal函数具体实现很简单</p>
+<p>当右儿子恰好够减，直接返回左儿子剩余</p>
+<p>右儿子省的多，从右儿子的右儿子搜</p>
+<p>右儿子不够，从左儿子搜</p>
+<pre><code>#include&lt;bits/stdc++.h&gt;
+using namespace std;
+#define ll long long
+#define A 7200000
+#define ls x&lt;&lt;1
+#define rs x&lt;&lt;1|1
+#define py printf(&quot;****\n&quot;)
+struct tree&#123;
+    ll l,r,v,c,cut;
+&#125;tr[A];
+ll ceng[A],cu[A];
+ll m,q;
+ll ask(ll x,ll c)&#123;
+//    if(c==tr[x].c) return 0;
+    if(tr[rs].c==c)
+        return tr[x].v-tr[rs].v;
+    else if(tr[rs].c&gt;c)
+        return tr[x].v-tr[rs].v+ask(rs,c);
+    else  return ask(ls,c-tr[rs].c+tr[rs].cut);
+&#125;
+void pushup(ll x)&#123;
+    if(tr[ls].c&lt;=tr[rs].cut)&#123;
+        tr[x].cut=tr[rs].cut-tr[ls].c+tr[ls].cut;
+        tr[x].v=tr[rs].v;
+        tr[x].c=tr[rs].c;
+        return ;
+    &#125;
+    if(tr[rs].cut==0)&#123;
+        tr[x].v=tr[ls].v+tr[rs].v;
+        tr[x].c=tr[ls].c+tr[rs].c;
+        tr[x].cut=tr[ls].cut+tr[rs].cut;
+        return ;
+    &#125;
+    if(tr[ls].c&gt;tr[rs].cut)&#123;
+        tr[x].cut=tr[ls].cut;
+        tr[x].v=tr[rs].v+ask(ls,tr[rs].cut);
+        tr[x].c=tr[rs].c+tr[ls].c-tr[rs].cut;
+        return ;
+    &#125;
+&#125;
+void built(ll p,ll l,ll r)&#123;
+//    printf(&quot;p=%lld l=%lld r=%lld\n&quot;,p,l,r);
+    tr[p].l=l,tr[p].r=r;
+    if(l==r)&#123;
+        if(cu[l]) &#123;
+            tr[p].cut=ceng[l];
+            tr[p].v=0,tr[p].c=0;
+            return ;
+        &#125;
+        if(!cu[l])&#123;
+            tr[p].v=ceng[l];
+            tr[p].c=1;
+            tr[p].cut=0;
+            return ;
+        &#125;
+    &#125;
+    
+    ll mid=(l+r)&gt;&gt;1;
+    built(p&lt;&lt;1,l,mid);
+    built(p&lt;&lt;1|1,mid+1,r);
+    pushup(p);
+&#125;
+void change(ll x,ll q)&#123;
+    if(tr[x].l==tr[x].r)&#123;
+        if(!cu[q])&#123;
+            tr[x].v=ceng[q];
+            tr[x].c=1;
+            tr[x].cut=0;
+            return ;
+        &#125;
+        else&#123;
+            tr[x].cut=ceng[q];
+            tr[x].v=0,tr[x].c=0;
+            return ;
+        &#125;
+    &#125;
+    ll mid=(tr[x].l+tr[x].r)&gt;&gt;1;
+    if(mid&gt;=q)
+        change(ls,q);
+    else 
+        change(rs,q);
+    pushup(x);
+&#125;
+int main()&#123;
+    scanf(&quot;%lld%lld&quot;,&amp;m,&amp;q);
+    for(ll i=1;i&lt;=m;i++)&#123;
+        scanf(&quot;%lld%lld&quot;,&amp;cu[i],&amp;ceng[i]);
+    &#125;
+    built(1,1,m);
+//    printf(&quot;tr.c .v=%lld  %lld\n&quot;,tr[2].c,tr[2].v);
+//    printf(&quot;.c=%lld v=%lld\n&quot;,tr[3].c,tr[3].v);
+//    printf(&quot;.c=%lld\n&quot;,tr[1].v);
+    for(ll i=1,a,b,c;i&lt;=q;i++)&#123;
+        scanf(&quot;%lld%lld%lld&quot;,&amp;a,&amp;b,&amp;c);
+        cu[a]=b;
+        ceng[a]=c;
+        change(1,a);
+//        printf(&quot;p14 v=%lld c=%lld\n&quot;,tr[14].c,tr[14].v);
+        printf(&quot;%lld\n&quot;,tr[1].v);
+    &#125;
+&#125;
+</code></pre>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9516%E3%80%8CDrink%C2%B7blue%C2%B7weed%E3%80%8D/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9516%E3%80%8CDrink%C2%B7blue%C2%B7weed%E3%80%8D/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9517%E3%80%8C%E5%85%A5%E9%98%B5%E6%9B%B2&#183;%E5%B0%86%E5%86%9B%E4%BB%A4&#183;%E6%98%9F%E7%A9%BA%E3%80%8D/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9515%E3%80%8C%E5%BB%BA%E9%80%A0%E5%9F%8E%E5%B8%82city%EF%BC%88%E6%8F%92%E6%9D%BF%E6%B3%95%EF%BC%89%C2%B7%E8%BD%B0%E7%82%B8%C2%B7%E7%9F%B3%E5%A4%B4%E5%89%AA%E5%88%80%E5%B8%83%E3%80%8D/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="rtrt's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2025/03/">三月 2025<span class="sidebar_archives-count">135</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Hexo
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

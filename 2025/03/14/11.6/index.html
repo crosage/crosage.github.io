@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            11.6 | 
+        
+        Hexo
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.svg">
+    <link rel="icon" href="/img/favicon.svg">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Hexo">
+    <meta name="msapplication-starturl" content="http://example.com/2025/03/14/11.6/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Hexo">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.svg">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://example.com/2025/03/14/11.6/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="11.6 | Hexo">
+    <meta property="og:image" content="/img/favicon.svg">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Fri Mar 14 2025 11:38:13 GMT+0800">
+        <meta property="article:modified_time" content="Fri Mar 14 2025 11:37:30 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://example.com/2025/03/14/11.6/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://example.com/2025/03/14/11.6/index.html",
+    "headline": "11.6",
+    "datePublished": "Fri Mar 14 2025 11:38:13 GMT+0800",
+    "dateModified": "Fri Mar 14 2025 11:37:30 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "rtrt",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Hexo",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.svg"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%B0%8Fm%E7%9A%84%E6%9C%8B%E5%8F%8B%E5%9C%88"><span class="post-toc-number">1.</span> <span class="post-toc-text">小m的朋友圈</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#easy-misc"><span class="post-toc-number">2.</span> <span class="post-toc-text">easy_misc</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#sstv%E9%99%8D%E4%B8%B4%E5%88%B0%E6%88%91%E8%BA%AB%E8%BE%B9"><span class="post-toc-number">3.</span> <span class="post-toc-text">sstv降临到我身边</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#very-easy-ecc"><span class="post-toc-number">4.</span> <span class="post-toc-text">very_easy_ecc</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%BB%86%E7%8B%97"><span class="post-toc-number">5.</span> <span class="post-toc-text">细狗</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%9C%89%E7%82%B9%E8%87%AD%E7%9A%84base%E5%85%A8%E5%AE%B6%E6%A1%B6"><span class="post-toc-number">6.</span> <span class="post-toc-text">有点臭的base全家桶</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ezjs"><span class="post-toc-number">7.</span> <span class="post-toc-text">ezjs</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#easy%E5%BA%8F%E5%88%97%E5%8C%96"><span class="post-toc-number">8.</span> <span class="post-toc-text">easy序列化</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%BA%A2%E5%8C%85%E9%A2%98"><span class="post-toc-number">9.</span> <span class="post-toc-text">红包题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%87%B4%E6%95%B4%E6%95%B0%E6%BA%A2%E5%87%BA%E7%9A%84%E4%BD%A0"><span class="post-toc-number">10.</span> <span class="post-toc-text">致整数溢出的你</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#very-easy-re"><span class="post-toc-number">11.</span> <span class="post-toc-text">very_easy_re</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#easy-re"><span class="post-toc-number">12.</span> <span class="post-toc-text">easy_re</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%B6%85%E9%80%86%E5%90%91pyc"><span class="post-toc-number">13.</span> <span class="post-toc-text">超逆向pyc</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                11.6
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>rtrt</strong>
+        <span>3月 14, 2025</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=11.6&url=http://example.com/2025/03/14/11.6/index.html&pic=http://example.com/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=11.6&url=http://example.com/2025/03/14/11.6/index.html&via=rtrt" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2025/03/14/11.6/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://example.com/2025/03/14/11.6/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>归档于  2022-10-24 09:30</p>
+<h2 id="小m的朋友圈"><a href="#小m的朋友圈" class="headerlink" title="小m的朋友圈"></a>小m的朋友圈</h2><p>前两个图通过谷歌识图，最后一个图先找到有个像瓜子壳一样的标志物，那是珠海大剧院，珠海大剧院周围一个一个枚举，从港湾大道情侣中路试到海天公园。<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221025155306386-476964407.png" alt="image"></p>
+<h2 id="easy-misc"><a href="#easy-misc" class="headerlink" title="easy_misc"></a>easy_misc</h2><p><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024112951190-260301643.png" alt="image"><br>有个pdf 全选后发现最后一页有个东西被选中了，拖到一个地发现是xxencode，解码第二个文件得到是祖冲之密码<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024113139476-297074761.png" alt="image"></p>
+<p><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024093658049-1040000112.png" alt="image"><br>丢到里面运行得结果</p>
+<h2 id="sstv降临到我身边"><a href="#sstv降临到我身边" class="headerlink" title="sstv降临到我身边"></a>sstv降临到我身边</h2><p>题干里给出了提示sstv<br>搜索sstv ctf，buuctf有一个类似的题，下载相关sstv工具，用手机播放sstv<br>左上角二维码被遮住一部分，用画图工具复制右上角的二维码填补到左上角<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221025161949203-1289034245.png" alt="image"></p>
+<h2 id="very-easy-ecc"><a href="#very-easy-ecc" class="headerlink" title="very_easy_ecc"></a>very_easy_ecc</h2><p><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221025155505896-1867864826.png" alt="image"></p>
+<p>这个题放到百度发现是原题，只有密钥改变了。<br>point发现是圆锥曲线密码，然后丢到现成工具</p>
+<h2 id="细狗"><a href="#细狗" class="headerlink" title="细狗"></a>细狗</h2><p>因为e很小，尝试直接开方，试了matlab不行，找了网上的脚本<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024112204988-2125773673.png" alt="image"><br>（放进matlab都inf</p>
+<h2 id="有点臭的base全家桶"><a href="#有点臭的base全家桶" class="headerlink" title="有点臭的base全家桶"></a>有点臭的base全家桶</h2><p>上半个flag:<br>base128包含0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\xb5\xb6\xb7\xbc\xbd\xbe\xc1\xc2\xc3\xc4\xc5\xc6\xc7\xc8\xc9\xca\xcb\xcc\xcd\xce\xcf\xd1\xd2\xd3\xd4\xd5\xd6\xd7\xd8\xd9\xda\xdb\xdc\xdd\xde\xdf\xe1\xe2\xe3\xe4\xe5\xe6\xe7\xe8\xe9\xea\xeb\xec\xed\xee\xef\xf1\xf2\xf3\xf4\xf5\xf6\xf7\xf8\xf9\xfa\xfb\xfc\xfd\xfe\xff</p>
+<p>有base128标识：类似\x1这样，并且末尾有[2]是分块之后缺少字节为多少，另外还有分块</p>
+<p>丢进base128<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024090703451-563749656.png" alt="image"></p>
+<pre><code>b&#39;&lt;c)qe@PUf+;cm^8@Rb&lt;5&lt;\RQu@r,1f9ij&gt;h9ic3e&gt;&quot;)IG@9#$`@RO*t&lt;``.B=_hP@;JS!e&lt;,&gt;`P&lt;^p7J=&amp;r3h=]I&gt;$;eoE7@RaO?&lt;Gcu)@PM%V&gt;!u7i@THYd&lt;_%75=%&gt;kQ;enBn&lt;btrA&lt;,&gt;`AAO]^@&lt;,HGH;FXhJ&lt;\ebu@PUDS;f#W5&lt;bk&lt;.&lt;c*(i9egHB;Jem&lt;&lt;btBS&lt;\cBd&lt;\Q7/@mt39&lt;btr[=_^E7@r!f%&lt;GctZ&lt;\e&gt;j&lt;c&#39;QJ=)CfZ=)2JaASbOL&lt;*!0q9ib;:9ij&gt;U9gh&lt;(&lt;,5B!&lt;\[3f@n9d,&lt;^fJ7=Yb&amp;C&lt;\[d!&lt;,HGb9h7TQ&lt;\[cV;DM!h&lt;bu;K@5:__=_q,I&lt;AA&lt;1&lt;c2GL9ib:P&lt;*![.=%&gt;kQ@n:Q&gt;9iak[&lt;bb*4A4BU@@7FF%ASYID=&#39;0E3;_h6Q;eooD@Rj&lt;l&lt;c*(b9l+!S@7Xp/9iWo*&lt;AJZ3=%&gt;l&#39;:02+0@T5cM=_^E)=%+uI&lt;,H_P&lt;c15\&lt;bl2&quot;=]SFA;f#KK;Jng(=]@k7ASbLn=)2nm9iX&amp;*&lt;AJfC@9-!A@5DFq=%GYK=&amp;rL.AO]F;&lt;,&gt;TKASlZl&lt;bas0;_Tq-=)LoN;HQ7]&lt;btZ(;DD&#39;j@7&gt;9O9iZ.9=]K-&amp;&lt;\d9M@7&gt;EE9l=WD&lt;\RNu=%5f(@Rk65@Rb/l&lt;\ebu=]SOI@Rb$4@VeYT&lt;GaI/&lt;buSP;JUAj@RkZh&lt;\ec*@RaOB;eeX-&lt;``.B=_hP@=&#39;%j_@7FdA;J^;T=)1](=]S9f;f53A;DUX==_q87A8GF&gt;&lt;GQ\P;DCWt&lt;\\9/&lt;,&gt;/r=):o&lt;@TZNA&lt;c*(i=%+uJ&lt;,H;_;DCd:&lt;`W`f;))lg=&#39;0ET;b05V&lt;bbBJ&lt;(9o1AOgiX&lt;blZ#&lt;`_&quot;s@9-o0@7Ndg@TZNA=_^E$A2#`&gt;&gt;&quot;28$@RY6==&amp;s!Y@kpeL&lt;GY]8@T7/D&lt;GaHIASbmt@7XpC;J^;u&lt;\ec8&lt;btob;/:D[&lt;c(`.&gt;&quot;)FK&lt;`W7B@mr7R@Rrg\&lt;\\,==]\IG&lt;*3g4@RaO&quot;=_qV*@PM\&gt;&lt;c2)9&lt;c(`[=]K-N&lt;\d-&amp;;/0!4@;@`@&lt;bb6&quot;@r,[s&lt;,&gt;T:ASbOM&lt;bl5&amp;@5:Q%&gt;&quot;DCg@Rb&lt;U&lt;Glbr9l+!7&gt;!t\P;J^/+&lt;\eo.=%6^kAO^33@T5fn&lt;,5Z@A2.V;&lt;,H_Y@&lt;ts3&lt;_%CCA26bJ;eooF@;JP=&lt;c*(i@7F:;;JUAh9iZ-e&lt;`_&quot;0&lt;A@*K;/AR#@TYrn&lt;_&quot;lG;DLj7&lt;btfN@5C5I&lt;`_&quot;0A2#`&gt;@5DFp@&lt;u`l=_h2bASbLpA40&lt;s@Rb&lt;,&lt;\cO*&lt;btr/=)(K2@Rb&lt;1&lt;btr0@kgl&amp;@7F!e&lt;`h[^&lt;c&#39;O89h&amp;r#;HRI)&lt;c)MN=_hPd=&amp;s-?@n(!/9ic4X&lt;AJMh&lt;,G5uA40U)9h/kj&lt;_%4U=%,,L=);DGASXal&lt;c*(i=)Cu?&lt;bkl&gt;@RaNs&lt;GFur;c[F/;JgMU9iX&amp;A&lt;c&#39;]e=%&gt;kc&lt;GZ&gt;M9h&amp;;V&gt;!thq=%?:^:KMX5@&lt;ts4&lt;c&#39;QF=]S[M=)1u=@RWmk=_h2L@7F9t;J]*D;H-+e=)1u4@9-Q5@mj3r@;B%i&gt;!ttPAO]R&lt;=)0Zm;aj;^&lt;c&#39;O8&lt;AIHn@5D^p&lt;`i7?&lt;c*(i9ic(2=)CE,@T?Gc=YO#p&lt;\[d!;eo92&lt;``0m&lt;c)n4&lt;\d-7@7P!+&lt;`h[i&lt;btZ$@PL&gt;o&lt;bu;K@V[i&amp;=]fWa@odDd=)CE/@RaNT&gt;#f)e&lt;c(H!@n(!/@5;M&gt;=&amp;rKt;J]ld=);hW;H@aT=)1uJ&lt;&amp;.0m@msp-@&lt;tsM&lt;c*(b9l+!S&lt;GQ\P;JT;i&lt;AJZ3=%&gt;])@7F-u@Rj9L&lt;c*(_@kpME:KC4c=%,_a&lt;\ec*=]SR)&lt;btf3;Fbdg&#39;
+</code></pre>
+<p>去掉最前面b’和最后面’</p>
+<p>之后丢到<img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024083030411-677911414.png" alt="image"></p>
+<p>字符集85，丢到<img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024091015976-1032531595.png" alt="image"></p>
+<pre><code>Vmtab2QySXhXbFpPV0VwclVtMW9iMVp0ZEV0aU1WbDRZVWQwYkdKRk1UTlZiVFZ2WVRGYU5tSkVVbFZpUmxwb1ZGZDRWbVZ0VGtWWGJGSk9UVlZXTlZZeFVrTmlNRFZ6V2tWb2FWSlZOVkJVVmxaM1l6RmFjVlJzV214V01VcElXVlZrYjFack1YUmxSV2hXVm14WmQxWkhjelZTTVZKMVVtMW9VMDB3TkRCV1JscHZZVEF4Y2sxV1ZsTmlhMHBXV1ZSR2NtVldXa2RXYlVaU1lrVndWMVV5TVhOWGJGcHpVMVJLVjFadFVsaFZWekZMWXpGS2RXSkdUbGROVmxZMlZsaHdUMU15U2tkWGJrNWhVbTE0YjFSWE5VTmtNVnB4Vkc1YVRsSlViRnBYYTFwelYwWktjMU51U2xwaVJsa3dWWHBHWVZZeFNuTlVhemxUVjBaS01WWnRjRXBOVlRGR1RsaEthMUpZYUhCV2JYaExZMnhTV0UxWFJtbGlSbFl6V2tWYVUxbFhWblJoUm1oVllURktlbGxzV2tabFZsSjBaVWQwYkdKWWFIaFdiRlpYWkRGYVNGSnJiR3BTYlZKdlZGUktOR1F4V1hsTlJFWlVVbXRhVmxaWE5WTmhiR1JKVVd4Q1lWWXphSHBWVjNoTFVteGtkVkpzVW1saVdHaGFWbXRhYjFNd01WZFNibEpYWVhwc2NGUlVTbTlUUm14eldraHdiRlpzV2toVlYzQkxZVmRLZEU5VVVscE5SbHBNV1d0YWQyTXhSbFZSYld4b1lrVnZNVmRyYUhkV2F6QjRZak5rVjJKcldsTlVWelZUVkd4a2MxZHNUbFppUnprMlZWZDBNRll4V2xaWFdHeFdWbTFPTkZZd1duTmtWazV5VGxad2JHSkdWalJYVmxaaFVqRktjMUp1VW10U1JYQlBWbXBPVG1WR2JGVlVia3BQVW10d01Wa3dVazlXYkZwelYydDRWbFpGV25KVlZFWjNVbFpLVlZGc1RsaFNNVXBLVm0xMFlWRXdNVmhVYkdoWVlYcFdUMVpxU2pOTmJHdDZZMGhLVGsxWE9UWldSekF4VmxaWmVXVkZVbFZOUjFKSVdURmtUMU5HVm5KWGJYUlhWMFZGZDFkWGVHOWtNazV6Vm10YVYxWkZTbEJXYkZaaFVURlNkRTFWWkZKaVZWcDRWakZvZDJFeFRrWk5TSEJZVm0xU2Rsa3lNVXRrVmxaMVlVWmFUbUV4Y0ZkV1ZsSkRUVWRLVms1V2FGaGhNVXBWVlRCb1FtVldXbk5WYXpscVlrWmFXbFZ0ZUd0VmJGcFdUa2hvWVZKRlduWlpWRVpoWkZaT2MxcEdTazVOVmxZMlZsUktORkV4U2tkWGEyaFRZbGQ0VmxWc2FHOVNNWEJYV2taYVVWVlVNRGs9
+</code></pre>
+<p>丢到工具硬跑，五轮base64，四轮base58，一轮base32，一轮base16<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024091539647-796036701.png" alt="image"></p>
+<p><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024091644147-780930045.png" alt="image"></p>
+<p>工具：<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024091747521-736462185.png" alt="image"></p>
+<p>下半个flag：</p>
+<p>还是用上面的脚本base91解码跑9轮</p>
+<pre><code>203696893666692597026492988
+</code></pre>
+<p>base36编码得flag<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024092211804-583348053.png" alt="image"></p>
+<h2 id="ezjs"><a href="#ezjs" class="headerlink" title="ezjs"></a>ezjs</h2><p>开源代码，搜索js相关编码发现jother，放到解码器没有反应，再还通过找别的博客知道这是jsfuck，那个js函数jsfuck可以直接运行<br>放到f12控制台有个弹窗得到flag</p>
+<h2 id="easy序列化"><a href="#easy序列化" class="headerlink" title="easy序列化"></a>easy序列化</h2><p>序列化我做过有类似的题，这个题直接序列化做不出来</p>
+<h2 id="红包题"><a href="#红包题" class="headerlink" title="红包题"></a>红包题</h2><p>f12看到图片用了路径试了试&#x2F;..&#x2F;不行<br>还有&#x2F;icons&#x2F;..&#x2F;也不行<br>搜了下版本apache<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024174829337-689485144.png" alt="image"><br>一搜出漏洞<br>丢到网上下的工具里跑得到路径，丢到burp suite<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221025161516046-2113932584.png" alt="image"></p>
+<h2 id="致整数溢出的你"><a href="#致整数溢出的你" class="headerlink" title="致整数溢出的你"></a>致整数溢出的你</h2><p>三问<br>第一问直接利用0-最大值<br>第二问暴力，编写利用脚本<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024095027975-801012624.png" alt="image"><br>第三问利用int最小值比最大值大1<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024095349751-403951112.png" alt="image"></p>
+<h2 id="very-easy-re"><a href="#very-easy-re" class="headerlink" title="very_easy_re"></a>very_easy_re</h2><p>ida直接看flag，{hacking_for_fun}<br>然后main函数里执行了替换<br>替换即可<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024110936606-831132264.png" alt="image"></p>
+<h2 id="easy-re"><a href="#easy-re" class="headerlink" title="easy_re"></a>easy_re</h2><p>逆向，丢到exeinfope.exe发现套了层壳<br>upx脱壳可以分析<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024095616904-696197508.png" alt="image"><br>发现是换表base64<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024095718309-212483630.png" alt="image"></p>
+<h2 id="超逆向pyc"><a href="#超逆向pyc" class="headerlink" title="超逆向pyc"></a>超逆向pyc</h2><p>这里应当是</p>
+<pre><code>else :
+	res+=c
+</code></pre>
+<p>它逆向的有问题<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024103459692-428969049.png" alt="image"><br>rail_fence是栅栏密码，有2，4，7，8，14，28<br>caesar是凯撒密码3-17暴力一遍<br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024103920991-262937484.png" alt="image"><br><img src="https://img2022.cnblogs.com/blog/1708132/202210/1708132-20221024103931259-829240860.png" alt="image"></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2025/03/14/11.6/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2025/03/14/11.6/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2025/03/14/123/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2025/03/14/%E3%80%8CPKUWC2018%E3%80%8DSlay%20the%20Spire/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="rtrt's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2025/03/">三月 2025<span class="sidebar_archives-count">135</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Hexo
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

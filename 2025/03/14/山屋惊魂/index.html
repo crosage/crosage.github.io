@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            山屋惊魂 | 
+        
+        Hexo
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.svg">
+    <link rel="icon" href="/img/favicon.svg">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Hexo">
+    <meta name="msapplication-starturl" content="http://example.com/2025/03/14/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Hexo">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.svg">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://example.com/2025/03/14/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="山屋惊魂 | Hexo">
+    <meta property="og:image" content="/img/favicon.svg">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Fri Mar 14 2025 11:38:14 GMT+0800">
+        <meta property="article:modified_time" content="Fri Mar 14 2025 11:37:17 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://example.com/2025/03/14/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://example.com/2025/03/14/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/index.html",
+    "headline": "山屋惊魂",
+    "datePublished": "Fri Mar 14 2025 11:38:14 GMT+0800",
+    "dateModified": "Fri Mar 14 2025 11:37:17 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "rtrt",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Hexo",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.svg"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                山屋惊魂
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>rtrt</strong>
+        <span>3月 14, 2025</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=山屋惊魂&url=http://example.com/2025/03/14/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/index.html&pic=http://example.com/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=山屋惊魂&url=http://example.com/2025/03/14/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/index.html&via=rtrt" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2025/03/14/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://example.com/2025/03/14/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>归档于  2019-10-26 15:35</p>
+<p>我太傻逼了打了13.5K</p>
+<p>思路很简单,代码很难</p>
+<p><img src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif"><img src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif"></p>
+<pre><code>#include&lt;bits/stdc++.h&gt;
+using namespace std;
+#define ll long long
+struct moo&#123;
+    ll opt1;//第一个
+    ll xiaoyu,xiaoyudengyu,dayu,dayudengyu;
+    ll opt2;//第二个
+    ll val1;//第一个数
+    ll val2;//第二个数
+    ll wenhao;//有无问号
+&#125;node[110];
+ll n;
+ll mit[10],spd[10],san[10],kno[10];
+double f[110][10][10][10][10],ans1[110],ans2[110],ans3[110],ans4[110],dice[30][75];
+ll needpan(ll x)&#123;
+    if((!node[x].xiaoyu)&amp;&amp;(!node[x].dayu)&amp;&amp;(!node[x].xiaoyudengyu)&amp;&amp;(!node[x].dayudengyu))
+        return 0;
+    return 1;
+&#125;
+char ch1[110],ch2[110],ch3[110],ch4[110];
+ll work(char c)&#123;
+    if(c==&#39;i&#39;) return 1;
+    if(c==&#39;p&#39;) return 2;
+    if(c==&#39;a&#39;) return 3;
+    if(c==&#39;n&#39;) return 4;
+&#125;
+void cal(ll i,ll j1,ll j2,ll j3,ll j4,ll opt,ll val,double gailv)&#123;
+//    printf(&quot;**************opt=%lld\n&quot;,opt);
+    if(opt==1)&#123;
+        if(j1+val&lt;=0) return ;
+        ll jj=j1+val;
+        if(jj&gt;8) jj=8;
+        f[i+1][jj][j2][j3][j4]+=gailv*f[i][j1][j2][j3][j4];
+    &#125;
+    else if(opt==2)&#123;
+        if(j2+val&lt;=0) return ;
+        ll jj=j2+val;
+        if(jj&gt;8) jj=8;
+        f[i+1][j1][jj][j3][j4]+=gailv*f[i][j1][j2][j3][j4];
+    &#125;
+    else if(opt==3)&#123;
+        if(j3+val&lt;=0)&#123;
+//            printf(&quot;****\n&quot;);
+            return ;
+        &#125;
+        ll jj=j3+val;
+        if(jj&gt;8) jj=8;
+        f[i+1][j1][j2][jj][j4]+=gailv*f[i][j1][j2][j3][j4];
+        
+    &#125;
+    else&#123;
+        if(j4+val&lt;=0)&#123;
+//            printf(&quot;******\n&quot;);
+            return ;
+        &#125;
+        ll jj=j4+val;
+        if(jj&gt;8) jj=8;
+        f[i+1][j1][j2][j3][jj]+=gailv*f[i][j1][j2][j3][j4];
+//        printf(&quot;f[%lld][%lld][%lld][%lld][%lld]=%lf\n&quot;,i+1,j1,j2,j3,jj,f[i+1][j1][j2][j3][jj]);
+    &#125;    
+&#125;
+int main()&#123;
+    ll ita,itb,itc,itd,a;
+    scanf(&quot;%lld&quot;,&amp;a);
+    while(a)&#123;
+        mit[++mit[0]]=a%10;
+        a/=10;
+    &#125;
+    scanf(&quot;%lld&quot;,&amp;ita);
+    scanf(&quot;%lld&quot;,&amp;a);
+    while(a)&#123;
+        spd[++spd[0]]=a%10;
+        a/=10;
+    &#125;
+    scanf(&quot;%lld&quot;,&amp;itb);
+    scanf(&quot;%lld&quot;,&amp;a);
+    while(a)&#123;
+        san[++san[0]]=a%10;
+        a/=10;
+    &#125;
+    scanf(&quot;%lld&quot;,&amp;itc);
+    scanf(&quot;%lld&quot;,&amp;a);
+    while(a)&#123;
+        kno[++kno[0]]=a%10;
+        a/=10;
+    &#125;
+    scanf(&quot;%lld&quot;,&amp;itd);
+    scanf(&quot;%lld&quot;,&amp;a);
+    for(ll i=1;i&lt;=a;i++)&#123;
+        scanf(&quot;%s&quot;,ch1+1);
+        node[i].opt1=work(ch1[2]);
+        scanf(&quot;%s&quot;,ch2+1);
+        if(ch2[1]==&#39;+&#39;||ch2[1]==&#39;-&#39;)&#123;
+            ll x=0;
+            ll it=2,f=1;
+            if(ch2[1]==&#39;-&#39;) f=-1;
+            while(isdigit(ch2[it]))&#123;
+                x=x*10+ch2[it]-&#39;0&#39;;
+                it++;
+            &#125;
+            if(ch2[it]==&#39;?&#39;)&#123;
+                node[i].wenhao=1;
+            &#125;
+            node[i].val1=x*f;
+        &#125;
+        else &#123;
+            if(ch2[1]==&#39;&lt;&#39;&amp;&amp;ch2[2]==&#39;=&#39;)&#123;
+                node[i].xiaoyudengyu=1;
+            &#125;
+            else if(ch2[1]==&#39;&lt;&#39;)&#123;
+                node[i].xiaoyu=1;
+            &#125;
+            else if(ch2[1]==&#39;&gt;&#39;&amp;&amp;ch2[2]==&#39;=&#39;)&#123;
+                node[i].dayudengyu=1;
+            &#125;
+            else node[i].dayu=1;
+            scanf(&quot;%lld&quot;,&amp;node[i].val1);
+            scanf(&quot;%s&quot;,ch3+1);
+            node[i].opt2=work(ch3[2]);
+            scanf(&quot;%s&quot;,ch2+1);
+            ll x=0;
+            ll it=2,f=1;
+            if(ch2[1]==&#39;-&#39;) f=-1;
+            while(isdigit(ch2[it]))&#123;
+                x=x*10+ch2[it]-&#39;0&#39;;
+                it++;
+            &#125;
+            if(ch2[it]==&#39;?&#39;)&#123;
+                node[i].wenhao=1;
+            &#125;
+            node[i].val2=x*f;
+        &#125;
+    &#125;
+//    for(ll i=1;i&lt;=a;i++)&#123;
+//        printf(&quot;opt1=%lld opt2=%lld val1=%lld val2=%lld wenhao=%lld &lt;%lld &lt;=%lld &gt;%lld &gt;=%lld\n&quot;,node[i].opt1,node[i].opt2,node[i].val1,node[i].val2,node[i].wenhao,node[i].xiaoyu,node[i].xiaoyudengyu,node[i].dayu,node[i].dayudengyu);
+//    &#125;
+    f[0][ita][itb][itc][itd]=100;
+    dice[0][0]=1.0;
+    for(ll i=0;i&lt;=16;i++)&#123;
+        for(ll j=0;j&lt;=32;j++)&#123;
+            dice[i+1][j+1]+=dice[i][j]*1.0/3.0;
+            dice[i+1][j+2]+=dice[i][j]*1.0/3.0;
+            dice[i+1][j]+=dice[i][j]*1.0/3.0;
+        &#125;
+    &#125;
+//    printf(&quot;ita=%lld itb=%lld itc=%lld itd=%lld************\n&quot;,ita,itb,itc,itd);
+//    printf(&quot;****\n&quot;);
+    for(ll i=0;i&lt;a;i++)&#123;
+        for(ll j1=1;j1&lt;=8;j1++)
+            for(ll j2=1;j2&lt;=8;j2++)
+                for(ll j3=1;j3&lt;=8;j3++)
+                    for(ll j4=1;j4&lt;=8;j4++)&#123;
+                        if(f[i][j1][j2][j3][j4])&#123;
+                            if(!needpan(i+1))&#123;
+                                if(node[i+1].wenhao)&#123;
+                                    ll cnt=abs(node[i+1].val1);
+                                    ll opt,opt1;
+                                    if(node[i+1].val1&lt;0) opt=-1;
+                                    else opt=1;
+                                    double delt=1;
+                                    opt1=node[i+1].opt1;
+                                    for(ll j=0;j&lt;=32;j++)&#123;
+                                        if(!dice[cnt][j]) continue ;
+                                        ll val=opt*j;
+                                        cal(i,j1,j2,j3,j4,opt1,val,dice[cnt][j]);
+                                    &#125;
+                                &#125;
+                                else &#123;
+                                    ll opt=node[i+1].opt1,val=node[i+1].val1;
+                                    cal(i,j1,j2,j3,j4,opt,val,1.0);
+                                &#125;
+                            &#125;
+                            else &#123;//void cal(ll i,ll j1,ll j2,ll j3,ll j4,ll opt,ll val,double gailv)&#123;
+                                ll opt1=node[i+1].opt1,opt2=node[i+1].opt2;
+                                ll val1=node[i+1].val1,val2=fabs(node[i+1].val2);
+                                ll opt;
+                                if(node[i+1].val2&lt;0) opt=-1;
+                                else opt=1;
+                                if(node[i+1].xiaoyu)&#123;//&lt;
+                                    if(opt1==1)&#123;
+                                        ll cnt1=mit[8-j1+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&gt;=val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==2)&#123;
+                                        ll cnt1=spd[8-j2+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&gt;=val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==3)&#123;
+                                        ll cnt1=san[8-j3+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&gt;=val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+//                                                        printf(&quot;%lf cnt1=%lld val2=%lld dice\n&quot;,dice[cnt1][j]*dice[val2][q],cnt1,val2);
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+//                                                        printf(&quot;f=%lf\n&quot;,f[i+1][j1][j2][j3+opt*val2][j4]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==4)&#123;
+                                        ll cnt1=kno[8-j4+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&gt;=val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                &#125;
+                                else if(node[i+1].dayu)&#123;
+                                    if(opt1==1)&#123;
+                                        ll cnt1=mit[8-j1+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&lt;=val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==2)&#123;
+                                        ll cnt1=spd[8-j2+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&lt;=val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==3)&#123;
+                                        ll cnt1=san[8-j3+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&lt;=val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==4)&#123;
+                                        ll cnt1=kno[8-j4+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&lt;=val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                &#125;
+                                else if(node[i+1].dayudengyu)&#123;
+                                    if(opt1==1)&#123;
+                                        ll cnt1=mit[8-j1+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&lt;val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==2)&#123;
+                                        ll cnt1=spd[8-j2+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&lt;val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==3)&#123;
+                                        ll cnt1=san[8-j3+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&lt;val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==4)&#123;
+                                        ll cnt1=kno[8-j4+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&lt;val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                &#125;
+                                else &#123;
+                                    if(opt1==1)&#123;
+                                        ll cnt1=mit[8-j1+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&gt;val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==2)&#123;
+                                        ll cnt1=spd[8-j2+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&gt;val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==3)&#123;
+                                        ll cnt1=san[8-j3+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&gt;val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                    if(opt1==4)&#123;
+                                        ll cnt1=kno[8-j4+1];
+                                        for(ll j=0;j&lt;=32;j++)&#123;
+                                            if(j&gt;val1)
+                                                f[i+1][j1][j2][j3][j4]+=dice[cnt1][j]*f[i][j1][j2][j3][j4];
+                                            else &#123;
+                                                if(node[i+1].wenhao)&#123;
+                                                    for(ll q=0;q&lt;=32;q++)&#123;
+                                                        cal(i,j1,j2,j3,j4,opt2,opt*q,dice[cnt1][j]*dice[val2][q]);
+                                                    &#125;
+                                                &#125;
+                                                else &#123;
+                                                    cal(i,j1,j2,j3,j4,opt2,opt*val2,dice[cnt1][j]);
+                                                &#125;
+                                            &#125;
+                                        &#125;
+                                    &#125;
+                                &#125;
+                            &#125;
+                        &#125;
+                    &#125;
+    &#125;
+    double ans=0;
+    for(ll j1=1;j1&lt;=8;j1++)&#123;
+        for(ll j2=1;j2&lt;=8;j2++)&#123;
+            for(ll j3=1;j3&lt;=8;j3++)&#123;
+                for(ll j4=1;j4&lt;=8;j4++)&#123;
+                    if(f[a][j1][j2][j3][j4])&#123;
+//                        printf(&quot;f[%lld][%lld][%lld][%lld][%lld]=%lf\n&quot;,a,j1,j2,j3,j4,f[a][j1][j2][j3][j4]);
+                        ans1[mit[8-j1+1]]+=f[a][j1][j2][j3][j4];
+                        ans2[spd[8-j2+1]]+=f[a][j1][j2][j3][j4];
+                        ans3[san[8-j3+1]]+=f[a][j1][j2][j3][j4];
+                        ans4[kno[8-j4+1]]+=f[a][j1][j2][j3][j4];
+                    &#125;
+                &#125;
+            &#125;
+        &#125;
+    &#125;
+    ans=0;
+    for(ll i=1;i&lt;=8;i++)
+        ans+=ans1[i];
+    printf(&quot;%.2lf\n&quot;,fabs(100-ans));
+    for(ll i=1;i&lt;=8;i++)
+        printf(&quot;%.2lf &quot;,ans1[i]);
+    puts(&quot;&quot;);
+    for(ll i=1;i&lt;=8;i++)
+        printf(&quot;%.2lf &quot;,ans2[i]);
+    puts(&quot;&quot;);
+    for(ll i=1;i&lt;=8;i++)
+        printf(&quot;%.2lf &quot;,ans3[i]);
+    puts(&quot;&quot;);
+    for(ll i=1;i&lt;=8;i++)
+        printf(&quot;%.2lf &quot;,ans4[i]);
+    puts(&quot;&quot;);
+&#125;
+</code></pre>
+<p>View Code</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2025/03/14/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2025/03/14/%E5%B1%B1%E5%B1%8B%E6%83%8A%E9%AD%82/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2025/03/14/%E8%9B%87/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2025/03/14/%E5%A6%82%E4%BD%95%E5%BC%80%E5%90%AFO2%E4%BC%98%E5%8C%96/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="rtrt's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2025/03/">三月 2025<span class="sidebar_archives-count">135</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Hexo
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

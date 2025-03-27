@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            NOIP模拟测试28「阴阳·虎·山洞」 | 
+        
+        Hexo
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.svg">
+    <link rel="icon" href="/img/favicon.svg">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Hexo">
+    <meta name="msapplication-starturl" content="http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9528%E3%80%8C%E9%98%B4%E9%98%B3%C2%B7%E8%99%8E%C2%B7%E5%B1%B1%E6%B4%9E%E3%80%8D/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Hexo">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.svg">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9528%E3%80%8C%E9%98%B4%E9%98%B3%C2%B7%E8%99%8E%C2%B7%E5%B1%B1%E6%B4%9E%E3%80%8D/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="NOIP模拟测试28「阴阳·虎·山洞」 | Hexo">
+    <meta property="og:image" content="/img/favicon.svg">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Fri Mar 14 2025 11:38:13 GMT+0800">
+        <meta property="article:modified_time" content="Fri Mar 14 2025 11:36:48 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9528%E3%80%8C%E9%98%B4%E9%98%B3%C2%B7%E8%99%8E%C2%B7%E5%B1%B1%E6%B4%9E%E3%80%8D/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9528%E3%80%8C%E9%98%B4%E9%98%B3%C2%B7%E8%99%8E%C2%B7%E5%B1%B1%E6%B4%9E%E3%80%8D/index.html",
+    "headline": "NOIP模拟测试28「阴阳·虎·山洞」",
+    "datePublished": "Fri Mar 14 2025 11:38:13 GMT+0800",
+    "dateModified": "Fri Mar 14 2025 11:36:48 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "rtrt",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Hexo",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.svg"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%98%B4%E9%98%B3"><span class="post-toc-number">1.</span> <span class="post-toc-text">阴阳</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%A2%98%E8%A7%A3"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">题解</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">代码</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%99%8E"><span class="post-toc-number">2.</span> <span class="post-toc-text">虎</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%A2%98%E8%A7%A3-1"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">题解</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                NOIP模拟测试28「阴阳·虎·山洞」
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>rtrt</strong>
+        <span>3月 14, 2025</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=NOIP模拟测试28「阴阳·虎·山洞」&url=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9528%E3%80%8C%E9%98%B4%E9%98%B3%C2%B7%E8%99%8E%C2%B7%E5%B1%B1%E6%B4%9E%E3%80%8D/index.html&pic=http://example.com/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=NOIP模拟测试28「阴阳·虎·山洞」&url=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9528%E3%80%8C%E9%98%B4%E9%98%B3%C2%B7%E8%99%8E%C2%B7%E5%B1%B1%E6%B4%9E%E3%80%8D/index.html&via=rtrt" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9528%E3%80%8C%E9%98%B4%E9%98%B3%C2%B7%E8%99%8E%C2%B7%E5%B1%B1%E6%B4%9E%E3%80%8D/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9528%E3%80%8C%E9%98%B4%E9%98%B3%C2%B7%E8%99%8E%C2%B7%E5%B1%B1%E6%B4%9E%E3%80%8D/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>归档于  2019-08-28 17:42</p>
+<p>写这几个题解我觉得我就像在按照官方题解抄一样</p>
+<h2 id="阴阳"><a href="#阴阳" class="headerlink" title="阴阳"></a>阴阳</h2><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>将题目中给的阴阳看作黑色和白色</p>
+<p>首先我们观察到最后生成图中某种颜色必须是竖着单调递增或竖着单调递减</p>
+<p><img src="https://img2018.cnblogs.com/blog/1708132/201908/1708132-20190828164828789-1039641252.png"></p>
+<p>类似这样</p>
+<p>否则不满足这个条件</p>
+<blockquote>
+<p>但合法染色方案必须满足任意两个同颜色格子之间的格子也必须是该颜色。</p>
+</blockquote>
+<p>然后我们分四种情况统计，</p>
+<p>1.黑色居于左侧而且分界点单调不降，</p>
+<p>2.黑色居于左侧而且分界点单调不升，</p>
+<p>3.白色居于左侧而且分界点单调不降，</p>
+<p>4.白色居于左侧而且分界点单调不升。</p>
+<p>我们发现这样会算重，</p>
+<p>dp然后手动容斥，</p>
+<p>1，2会算重左面每列全是黑色</p>
+<p>类似于</p>
+<p><img src="https://img2018.cnblogs.com/blog/1708132/201908/1708132-20190828165243053-675554939.png"></p>
+<p>类似的3，4会算重左面全是白色</p>
+<p>那么上面全是黑色我们也会算重（2，3）</p>
+<p>上面全是白色我们仍然会算重</p>
+<p>手动容斥</p>
+<p>题解应该都能看懂，实现稍难（不用说了我码力太弱）</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p><img src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif"><img src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif"></p>
+<pre><code>#include&lt;bits/stdc++.h&gt;
+using namespace std;
+#define ll long long
+#define A 1111
+const ll mod=1e9+7;
+ll can[A][A][10],f[A][A][2],up[A][A],down[A][A];
+//can定义为i行从1--j染成B剩下染成W是否合法
+char ch[A][A];
+ll n,m,flag1,flag2,ans;
+int main()&#123;
+    scanf(&quot;%lld%lld&quot;,&amp;n,&amp;m);
+    for(ll i=1;i&lt;=n;i++)
+        scanf(&quot;%s&quot;,ch[i]+1);
+    for(ll i=1;i&lt;=n;i++)&#123;
+        ll maxpos=0;
+        for(ll j=1;j&lt;=m;j++)&#123;
+            if(ch[i][j]==&#39;W&#39;) break;
+            if(ch[i][j]==&#39;B&#39;) maxpos=j;
+        &#125;
+        for(ll j=maxpos+1;j&lt;=m;j++)
+            if(ch[i][j]==&#39;B&#39;)&#123;
+                maxpos=m+1;    break;
+            &#125;
+        ll now=maxpos;
+        while(ch[i][now]!=&#39;W&#39;&amp;&amp;now&lt;=m)
+            can[i][now][1]=1,now++;
+    &#125;
+    
+    for(ll i=1;i&lt;=n;i++)&#123;
+        ll maxpos=m+1;
+        for(ll j=m;j&gt;=1;j--)&#123;
+            if(ch[i][j]==&#39;W&#39;) break;
+            if(ch[i][j]==&#39;B&#39;) maxpos=j;
+        &#125;
+        for(ll j=maxpos-1;j&gt;=1;j--)
+            if(ch[i][j]==&#39;B&#39;)&#123;
+                maxpos=-1; break;
+            &#125;
+        ll now=maxpos;
+        while(ch[i][now]!=&#39;W&#39;&amp;&amp;now&gt;=0)
+            can[i][m-now+1][2]=1,now--;
+    &#125;
+    for(ll i=0;i&lt;=m;i++)
+        up[0][i]=1,down[0][i]=1;
+    for(ll i=1;i&lt;=n;i++)&#123;
+        for(ll j=0;j&lt;=m;j++)&#123;
+            if(!can[i][j][1]) continue;
+            f[i][j][0]=up[i-1][j];
+            f[i][j][1]=down[i-1][j];
+//            printf(&quot;up[%lld][%lld]=%lld down=%lld\n&quot;,i-1,j,up[i-1][j],down[i-1][j]);
+        &#125;
+        for(ll j=0;j&lt;=m;j++)
+            up[i][j]=(up[i][j-1]+f[i][j][0])%mod/*,printf(&quot;f=%lld up=%lld\n&quot;,f[i][j][0],up[i][j])*/;
+        for(ll j=m;j&gt;=0;j--)
+            down[i][j]=(down[i][j+1]+f[i][j][1])%mod;
+//        printf(&quot;up=%lld down=%lld\n&quot;,up[n][m],down[n][0]);
+    &#125;
+/*    for(ll i=1;i&lt;=n;i++,puts(&quot;&quot;))&#123;
+        for(ll j=1;j&lt;=m;j++)&#123;
+            printf(&quot;%lld &quot;,can[i][j][1]);
+        &#125;
+    &#125;
+*/    memset(f,0,sizeof(f));
+    ans=(ans+up[n][m]+down[n][0]+mod)%mod;
+//    printf(&quot;ans=%lld\n&quot;,ans);
+    for(ll i=1;i&lt;=n;i++)&#123;
+        for(ll j=0;j&lt;=m;j++)&#123;
+            if(!can[i][j][2]) continue;
+            f[i][j][0]=up[i-1][j];
+            f[i][j][1]=down[i-1][j];
+        &#125;
+        for(ll j=0;j&lt;=m;j++)
+            up[i][j]=(up[i][j-1]+f[i][j][0])%mod;
+        for(ll j=m;j&gt;=0;j--)
+            down[i][j]=(down[i][j+1]+f[i][j][1])%mod;
+    &#125;
+//    printf(&quot;up=%lld down=%lld\n&quot;,up[n][m],down[n][0]);
+    ans=(ans+up[n][m]+down[n][0]+mod)%mod;
+//    printf(&quot;ans=%lld\n&quot;,ans);
+    memset(f,0,sizeof(f));
+    //减去左右重复
+    for(ll i=1;i&lt;m;i++)&#123;
+        ll flag=0;
+        for(ll j=1;j&lt;=n;j++)
+            if(!can[j][i][1])&#123;
+                flag=1;break;
+            &#125;
+        if(!flag) ans--;
+    &#125;
+    for(ll i=1;i&lt;m;i++)&#123;
+        ll flag=0;
+        for(ll j=1;j&lt;=n;j++)
+            if(!can[j][i][2])&#123;
+                flag=1;break;
+            &#125;
+        if(!flag) ans--;
+    &#125;
+    //减去上下
+    //若上面为B下面只能为W
+    for(ll i=1;i&lt;n;i++)&#123;
+        ll flag=0;
+        for(ll j=1;j&lt;=i;j++)
+            if(!can[j][m][1])&#123;
+                flag=1;break;
+            &#125;
+        for(ll j=i+1;j&lt;=n;j++)
+            if(!can[j][0][1])&#123;
+                flag=1;break;
+            &#125;
+        if(flag)continue;
+        ans--;
+    &#125;
+    for(ll i=n;i&gt;=2;i--)&#123;
+        ll flag=0;
+        for(ll j=1;j&lt;=i-1;j++)
+            if(!can[j][0][1])&#123;
+                flag=1;break;
+            &#125;
+        for(ll j=i;j&lt;=n;j++)
+            if(!can[j][m][1])&#123;
+                flag=1;break;
+            &#125;
+        if(flag)continue;
+        ans--;
+    &#125;
+    for(ll i=1;i&lt;=n;i++)&#123;
+        if(!can[i][0][1])    flag1=1;
+        if(!can[i][m][1])    flag2=1;
+    &#125;
+    if(!flag1) ans-=3;
+    if(!flag2) ans-=3;
+    printf(&quot;%lld\n&quot;,(ans+mod)%mod);
+&#125;
+</code></pre>
+<p>View Code</p>
+<h2 id="虎"><a href="#虎" class="headerlink" title="虎"></a>虎</h2><h3 id="题解-1"><a href="#题解-1" class="headerlink" title="题解"></a>题解</h3><p>我们发现一条性质我们子树内两个点要变成黑色我们同时经过树外的边不会使次数变优（除了直接与lca相连的边）</p>
+<p>然后根据这条性质，我们发现我们一定存在一种最优方案使任意两条染色路径互不相交</p>
+<p>然后我们进行贪心</p>
+<p>首先题目中给的无要求的边我们进行缩边</p>
+<p>我们统计到当前子树都已经全部染成黑色了，那么我们只用考虑与它相连就行</p>
+<p>拿下面这个图举例（假设全部为白边）</p>
+<p>你考虑3时你6的子树都处理完了，然后你遇到两个白色边（3，6）（3，7）你贪心直接染色就行，那么如果最后剩下一个没有染色怎么办，显然我们不用管，我们发现与3相连的边（1，3）这条边是必定被染色的，2本来要和3进行染色让（1，2）（1，3）进行染色，我们现在把这个边拉过来变成（2，8）进行染色就行了</p>
+<p>那么依据上文说的，我们只需要让与3相连白边个数（除了父亲与它相连边）&#x2F;2就行了</p>
+<p>推广到所有点统计白边个数&#x2F;2即可</p>
+<p>然后这样做对于根来说会出错，特判一下就AC了（对于根来说没有办法再让自己父亲拉边过来）</p>
+<p><img src="https://img2018.cnblogs.com/blog/1708132/201908/1708132-20190828173617525-1449145708.png"></p>
+<p><img src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif"><img src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif"></p>
+<pre><code>#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+#include&lt;cstring&gt;
+#include&lt;queue&gt;
+#include&lt;algorithm&gt;
+using namespace std;
+#define R register
+#define ll long long
+inline ll read()//-------
+&#123;
+    ll aa=0;char cc=getchar();
+    while(cc&lt;&#39;0&#39;||cc&gt;&#39;9&#39;) cc=getchar();
+    while(cc&lt;=&#39;9&#39;&amp;&amp;cc&gt;=&#39;0&#39;)
+        &#123;aa=(aa&lt;&lt;3)+(aa&lt;&lt;1)+(cc^48);cc=getchar();&#125;
+    return aa;
+&#125;
+const int N=1000005;
+struct tree&#123;
+    int v,last;
+&#125;tr[N&lt;&lt;1];
+int tot,first[N];
+inline void add(int x,int y)
+&#123;
+    tr[++tot]=(tree)&#123;y,first[x]&#125;;
+    first[x]=tot;return;
+&#125;
+int n,ans,mp[N],vi[N];
+int dfs(int x,int fa)
+&#123;
+    int sum=0;vi[x]=1;
+    for(R int i=first[x],v;i;i=tr[i].last)&#123;
+        v=tr[i].v;
+        if(v==fa)continue;
+        dfs(v,x);
+        sum^=1;
+        if(!sum)++ans;
+    &#125;
+    return sum;
+&#125;
+int main()
+&#123;
+    //freopen(&quot;tight.in&quot;,&quot;r&quot;,stdin);
+    //freopen(&quot;tight.out&quot;,&quot;w&quot;,stdout);
+    n=read();mp[1]=++mp[0];
+    for(R int i=2,x,y,z;i&lt;=n;++i)&#123;
+        x=read();y=read();z=read();
+        if(!z)&#123;
+            if(mp[i])mp[x]=mp[i];
+            else if(mp[x])mp[i]=mp[x];
+            else mp[i]=mp[x]=++mp[0];
+            continue;
+        &#125;
+        if(!mp[i])mp[i]=++mp[0];
+        if(!mp[x])mp[x]=++mp[0];
+        if(y)continue;
+        add(mp[i],mp[x]);
+        add(mp[x],mp[i]);
+    &#125;
+    for(R int i=1;i&lt;=mp[0];++i)
+        if(!vi[i])
+            if(dfs(i,i))++ans;
+    printf(&quot;%d&quot;,ans);
+    return 0;
+&#125;
+</code></pre>
+<p>View Code</p>
+<p><img src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif"><img src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif"></p>
+<pre><code>#include&lt;iostream&gt;
+#include&lt;cstdio&gt;
+#include&lt;cstring&gt;
+#include&lt;cstdlib&gt;
+#include&lt;queue&gt;
+#include&lt;vector&gt;
+#define R register
+using namespace std;
+inline int read()
+&#123;
+    int f=1,x=0;char ch=getchar();
+    while(ch&gt;&#39;9&#39;||ch&lt;&#39;0&#39;)&#123;if(ch==&#39;-&#39;)f=-1;ch=getchar();&#125;
+    while(ch&lt;=&#39;9&#39;&amp;&amp;ch&gt;=&#39;0&#39;)&#123;x=(x&lt;&lt;3)+(x&lt;&lt;1)+(ch^48);ch=getchar();&#125;
+    return f*x;
+&#125;
+const int maxn=1000005;
+struct node&#123;
+    int v,nxt,da;
+&#125;e[2*maxn];int h[maxn],nu;
+void add(int x,int y,int fl)
+&#123;
+    e[++nu].v=y;
+    e[nu].da=fl;
+    e[nu].nxt=h[x];
+    h[x]=nu;
+&#125;
+int n,f[maxn],ans;
+int dfs(int x,int xf)
+&#123;
+    int cnt=0;
+    for(int i=h[x];i;i=e[i].nxt)
+    &#123;
+        int y=e[i].v,k=e[i].da;
+        if(y==xf)continue;
+        int nw=dfs(y,x);
+        //cout&lt;&lt;x&lt;&lt;&quot; &quot;&lt;&lt;y&lt;&lt;&quot; &quot;&lt;&lt;k&lt;&lt;endl;
+        if(k==1)&#123;cnt++;continue;&#125;
+        if(!nw)continue;
+        if(k==3)ans++;
+        else cnt++;
+    &#125;
+    ans+=cnt/2;
+    if(cnt%2==0)return 0;
+    return 1;
+&#125;
+int main()
+&#123;
+    //freopen(&quot;data&quot;,&quot;r&quot;,stdin);
+    n=read();
+    int qj1=1,num1=0;
+    for(int x=2;x&lt;=n;++x)
+    &#123;
+        int y=read(),s=read(),t=read(),fl;
+        if(t==0)fl=2;
+        if(s==0&amp;&amp;t==1)num1++,fl=1;
+        if(s==1&amp;&amp;t==1)fl=3;
+        add(x,y,fl);
+        add(y,x,fl);
+    &#125;
+    int nw=dfs(1,0);
+    ans+=nw;
+    printf(&quot;%d\n&quot;,ans);
+&#125;/*
+g++ 1.cpp -o 1
+./1
+
+*/
+</code></pre>
+<p>View Code</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9528%E3%80%8C%E9%98%B4%E9%98%B3%C2%B7%E8%99%8E%C2%B7%E5%B1%B1%E6%B4%9E%E3%80%8D/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9528%E3%80%8C%E9%98%B4%E9%98%B3%C2%B7%E8%99%8E%C2%B7%E5%B1%B1%E6%B4%9E%E3%80%8D/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9529%E3%80%8C%E7%88%AC%E5%B1%B1%C2%B7%E5%AD%A6%E6%95%B0%E6%95%B0%C2%B7%E4%B8%83%E5%8D%81%E5%92%8C%E5%8D%81%E4%B8%83%E3%80%8D/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2025/03/14/NOIP%E6%A8%A1%E6%8B%9F%E6%B5%8B%E8%AF%9526%E3%80%8C%E5%9A%8E%E5%8F%AB%E5%93%8D%E5%BD%BB%E5%9C%A8%E8%B4%AA%E5%A9%AA%E7%9A%84%E6%9C%BA%E6%88%BF%C2%B7%E4%B8%BB%E4%BB%86%E8%A7%81%E8%AF%81%E4%BA%86%20Hobo%20%E7%9A%84%E7%A6%BB%E5%88%AB%C2%B7%E5%BE%81%E9%80%94%E5%A0%86%E7%A7%AF%E5%87%BA%E5%8F%8B%E6%83%85%E7%9A%84%E6%B0%B8%E6%81%92%E3%80%8D/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="rtrt's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        youremail@email.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2025/03/">三月 2025<span class="sidebar_archives-count">135</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/twitter" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/facebook" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.google.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Hexo
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 0000;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
