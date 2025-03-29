@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>ip addr输出解释</title>
+      <link href="/2025/03/29/ip-addr%E8%BE%93%E5%87%BA%E8%A7%A3%E9%87%8A/"/>
+      <url>/2025/03/29/ip-addr%E8%BE%93%E5%87%BA%E8%A7%A3%E9%87%8A/</url>
+      
+        <content type="html"><![CDATA[<h2 id="接口名称"><a href="#接口名称" class="headerlink" title="接口名称"></a>接口名称</h2><p>eth1 </p><ul><li>eth : ethernet缩写</li></ul><p>eno1</p><ul><li>eno : en仍为ethernet缩写 o是onboard板载，集成于主板</li></ul><p>enp1s0f0</p><ul><li>p1 :是PCI1号总线上</li><li>s :表示总线0号插槽</li><li>f0 :表示物理设备第0个功能</li></ul><h2 id="接口标志"><a href="#接口标志" class="headerlink" title="接口标志"></a>接口标志</h2><p>示例 &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt;</p><p>BROADCAST: 支持发送和接收广播数据包</p><p>MULTICAST: 支持发送和接收多播数据包</p><p>UP: 表示接口管理上是启用的</p><p>LOWER_UP: 表示物理层连接是活动的，即网线已插入并且连接的对端设备处于活动状态</p><p>NO-CARRIER: 表示接口启用但物理链路未连接（即未插网线等）</p><p>LOOPBACK: 表示为回环接口</p><p>mtu 1500: 单词可以发送得最大IP数据包大小</p><h2 id="排队规则"><a href="#排队规则" class="headerlink" title="排队规则"></a>排队规则</h2><p>qdisc noqueue: 没有使用队列</p><p>qdisc mq: 排队规则为多队列，</p><p>qdisc noop: 不做排队处理</p><p>qlen 1000: 发送队列长度，最多可以缓存多少等待发送的数据包</p><p>link&#x2F;ether 链路层信息，类型为ether</p><p>e8:61:1f:f8:db:dc   MAC地址</p><h2 id="scope"><a href="#scope" class="headerlink" title="scope"></a>scope</h2><p>global表示全局可路由地址</p><p>host表示仅在本机内部有效</p><p>valid_lft forever preferred_lft forever租期无限</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>swin-transformer汇报</title>
       <link href="/2025/03/28/swin-transformer%E6%B1%87%E6%8A%A5/"/>
       <url>/2025/03/28/swin-transformer%E6%B1%87%E6%8A%A5/</url>
